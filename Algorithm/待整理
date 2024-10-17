@@ -1,0 +1,21 @@
+vector 
+    包含        #include<vector>
+    定义        vector<object_type> 向量名称;
+                    例 vector<int> aVector;
+    at(整数)    返回指定位置的元素
+                    例 cout<<aVector.at(1);
+                        返回第二个元素的值
+    front()     返回第一个元素。
+                    例 cout<<aVector.front();
+    back()      返回最后一个元素，不检查这个数据是否存在。
+                    例 cout<<aVector.back();
+    swap(向量)  交换两个向量的值。
+                    例 v1.swap(v2);
+    push_back(值)
+                在向量最后添加值。
+                    v.push_back(k)；
+    pop_back()  删除最后一个元素，并将向量的大小减小一个。
+
+
+    begin()返回指向第一个元素的指针
+    end()返回指向末元素之后位置的指针
