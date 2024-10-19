@@ -17,13 +17,14 @@ int main()
     theFirstTry(m, n);
     // end
     cout << theAns;
-    cout << "hello"<<endl;
     return 0;
 }
 //int judge(int theMaximumJumpDistanceBeingVerified){
 
 //}
 void theFirstTry(int mInFuc,int nNow){
+    if(mInFuc==0)
+        return;
     int mini=d[1], thePositionOfMini=1;
     for(int z=1;z<nNow;z++){
         if(d[z+1]-d[z]<mini){
@@ -40,7 +41,7 @@ void theFirstTry(int mInFuc,int nNow){
     mInFuc--;
     nNow--;
     if (mInFuc == 0)
-        theAns == mini;
+        theAns = mini;
     theFirstTry(mInFuc, nNow);
     return;
 }
